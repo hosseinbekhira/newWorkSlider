@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+main {
+  width: 350px;
+  min-height: 250px;
+  margin: 20px auto;
+  position: relative;
+}
+.carousel {
+  overflow-x: hidden;
+}
+.carousel .container {
+  display: flex;
+  align-items: center;
+}
+.carousel .product {
+  width: 100%;
+  position: relative;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+.carousel .product picture {
+  width: 100%;
+}
+.carousel .product picture img {
+  width: 350px;
+  height: 250px;
+}
+.carousel .number-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: #ffffffa4;
+  padding: 2px;
+  border-radius: 5px;
+}
+.carousel .number-part img {
+  width: 30px;
+  margin-right: 5px;
+}
+.carousel .number-part .f-number {
+  margin-right: 5px;
+}
+.carousel .number-part .of {
+  margin-right: 5px;
+}
+.carousel .arrow-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+.carousel .arrow-part .left-arrow,
+.carousel .arrow-part .right-arrow {
+  background-color: #e7e7e7;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.carousel .arrow-part .left-arrow:hover,
+.carousel .arrow-part .right-arrow:hover {
+  background-color: #bdbbbb;
+}
+.carousel .arrow-part .left-arrow img,
+.carousel .arrow-part .right-arrow img {
+  width: 15px;
+  display: block;
+}
